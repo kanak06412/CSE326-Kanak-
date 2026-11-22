@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Create account &middot; Campus Connect
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="auth">
+   <section class="auth-side">
+    <div class="brand">
+     <span class="brand-mark">
+      CC
+     </span>
+     <div>
+      Campus Connect
+      <small>
+       College community platform
+      </small>
+     </div>
+    </div>
+    <h1>
+     Join the campus.
+    </h1>
+    <p>
+     Create your student account and start participating in the community.
+    </p>
+    <div class="auth-points">
+     <div>
+      &checkmark; One shared community room
+     </div>
+     <div>
+      &checkmark; Ready-made campus topics
+     </div>
+     <div>
+      &checkmark; Your own profile and posts
+     </div>
+    </div>
+   </section>
+   <section class="auth-card">
+    <div class="auth-box">
+     <h2>
+      Create account
+     </h2>
+     <p>
+      New registrations are normal user accounts.
+     </p>
+     <div class="alert error" hidden="" id="message">
+     </div>
+     <form class="form-grid" id="register-form">
+      <div class="field">
+       <label>
+        Full name
+       </label>
+       <input id="name" required=""/>
+      </div>
+      <div class="field">
+       <label>
+        Username
+       </label>
+       <input id="username" required=""/>
+      </div>
+      <div class="field">
+       <label>
+        Email
+       </label>
+       <input id="email" required="" type="email"/>
+      </div>
+      <div class="field">
+       <label>
+        Password
+       </label>
+       <input id="password" minlength="6" required="" type="password"/>
+      </div>
+      <div class="field">
+       <label>
+        Confirm password
+       </label>
+       <input id="confirm" required="" type="password"/>
+      </div>
+      <button class="btn">
+       Create account
+      </button>
+     </form>
+     <div class="auth-foot">
+      Already registered?
+      <a class="auth-link" href="login.html">
+       Login
+      </a>
+     </div>
+    </div>
+   </section>
+  </div>
+  <script src="js/auth.js" type="module">
+  </script>
+ </body>
+</html>

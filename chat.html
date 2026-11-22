@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Community Chat &middot; Campus Connect
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="app">
+   <aside class="sidebar">
+    <div class="brand">
+     <span class="brand-mark">
+      CC
+     </span>
+     <div>
+      Campus Connect
+      <small>
+       College community
+      </small>
+     </div>
+    </div>
+    <nav class="nav">
+     <a class="active" href="chat.html">
+      💬 Community Chat
+     </a>
+     <a class="" href="posts.html">
+      ▤ Posts
+     </a>
+     <a class="" href="profile.html">
+      ◉ Profile
+     </a>
+     <a class="" href="admin.html">
+      ⚙ Admin
+     </a>
+    </nav>
+    <div class="sidebar-bottom">
+     <div class="user-mini">
+      <b data-user-name="">
+       Student
+      </b>
+      <span data-user-username="">
+       @student
+      </span>
+     </div>
+     <button class="logout" id="logout">
+      &rarrhk; Log out
+     </button>
+    </div>
+   </aside>
+   <main class="main">
+    <header class="topbar">
+     <div style="display:flex;align-items:center;gap:10px">
+      <button class="mobile-menu">
+       ☰
+      </button>
+      <div>
+       <h1>
+        Community Chat
+       </h1>
+       <p>
+        Campus-wide community
+       </p>
+      </div>
+     </div>
+     <div class="top-actions">
+      <div class="avatar" data-avatar="">
+       ST
+      </div>
+     </div>
+    </header>
+    <div class="container">
+     <div class="hero">
+      <h2>
+       What's happening on campus?
+      </h2>
+      <p>
+       Talk with students in one shared community room. Use the ready-made tags to organize conversations without creating separate channels.
+      </p>
+      <div class="tags">
+       <span class="tag">
+        #LostFound
+       </span>
+       <span class="tag">
+        #CampusPlacement
+       </span>
+       <span class="tag">
+        #Events
+       </span>
+       <span class="tag">
+        #Hostel
+       </span>
+       <span class="tag">
+        #News
+       </span>
+       <span class="tag">
+        #Sports
+       </span>
+       <span class="tag">
+        #Academics
+       </span>
+       <span class="tag">
+        #General
+       </span>
+      </div>
+     </div>
+     <div class="grid grid-2">
+      <section class="card">
+       <div class="section-title">
+        <h2>
+         Messages
+        </h2>
+        <div class="search">
+         <input id="search" placeholder="Search messages..."/>
+         <select id="filter">
+         </select>
+        </div>
+       </div>
+       <div class="chat-list" id="messages">
+       </div>
+      </section>
+      <section class="card">
+       <div class="section-title">
+        <h2>
+         Start a message
+        </h2>
+       </div>
+       <div class="compose">
+        <textarea id="text" placeholder="Share an update, question or useful information..."></textarea>
+        <div class="tags" id="tag-box">
+        </div>
+        <button class="btn" id="send">
+         Send to community
+        </button>
+       </div>
+      </section>
+     </div>
+    </div>
+   </main>
+  </div>
+  <script src="js/chat.js" type="module">
+  </script>
+ </body>
+</html>

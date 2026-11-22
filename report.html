@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Report Content &middot; Campus Connect
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="app">
+   <aside class="sidebar">
+    <div class="brand">
+     <span class="brand-mark">
+      CC
+     </span>
+     <div>
+      Campus Connect
+      <small>
+       College community
+      </small>
+     </div>
+    </div>
+    <nav class="nav">
+     <a class="" href="chat.html">
+      💬 Community Chat
+     </a>
+     <a class="" href="posts.html">
+      ▤ Posts
+     </a>
+     <a class="" href="profile.html">
+      ◉ Profile
+     </a>
+     <a class="" href="admin.html">
+      ⚙ Admin
+     </a>
+    </nav>
+    <div class="sidebar-bottom">
+     <div class="user-mini">
+      <b data-user-name="">
+       Student
+      </b>
+      <span data-user-username="">
+       @student
+      </span>
+     </div>
+     <button class="logout" id="logout">
+      &rarrhk; Log out
+     </button>
+    </div>
+   </aside>
+   <main class="main">
+    <header class="topbar">
+     <div style="display:flex;align-items:center;gap:10px">
+      <button class="mobile-menu">
+       ☰
+      </button>
+      <div>
+       <h1>
+        Report Content
+       </h1>
+       <p>
+        Campus-wide community
+       </p>
+      </div>
+     </div>
+     <div class="top-actions">
+      <div class="avatar" data-avatar="">
+       ST
+      </div>
+     </div>
+    </header>
+    <div class="container">
+     <div class="card" style="max-width:700px;margin:auto">
+      <h2>
+       Report content
+      </h2>
+      <p class="muted">
+       Help administrators keep the campus community useful and respectful.
+      </p>
+      <div class="alert success" hidden="" id="message">
+      </div>
+      <form class="form-grid" id="report-form">
+       <div class="field">
+        <label>
+         Reason
+        </label>
+        <select id="reason">
+         <option>
+          Spam
+         </option>
+         <option>
+          Harassment
+         </option>
+         <option>
+          Inappropriate content
+         </option>
+         <option>
+          Fake/misleading information
+         </option>
+         <option>
+          Other
+         </option>
+        </select>
+       </div>
+       <div class="field">
+        <label>
+         Details
+        </label>
+        <textarea id="details" placeholder="Explain what should be reviewed..." required=""></textarea>
+       </div>
+       <button class="btn">
+        Submit report
+       </button>
+      </form>
+     </div>
+    </div>
+   </main>
+  </div>
+  <script src="js/report.js" type="module">
+  </script>
+ </body>
+</html>

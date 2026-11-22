@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   My Profile &middot; Campus Connect
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="app">
+   <aside class="sidebar">
+    <div class="brand">
+     <span class="brand-mark">
+      CC
+     </span>
+     <div>
+      Campus Connect
+      <small>
+       College community
+      </small>
+     </div>
+    </div>
+    <nav class="nav">
+     <a class="" href="chat.html">
+      💬 Community Chat
+     </a>
+     <a class="" href="posts.html">
+      ▤ Posts
+     </a>
+     <a class="active" href="profile.html">
+      ◉ Profile
+     </a>
+     <a class="" href="admin.html">
+      ⚙ Admin
+     </a>
+    </nav>
+    <div class="sidebar-bottom">
+     <div class="user-mini">
+      <b data-user-name="">
+       Student
+      </b>
+      <span data-user-username="">
+       @student
+      </span>
+     </div>
+     <button class="logout" id="logout">
+      &rarrhk; Log out
+     </button>
+    </div>
+   </aside>
+   <main class="main">
+    <header class="topbar">
+     <div style="display:flex;align-items:center;gap:10px">
+      <button class="mobile-menu">
+       ☰
+      </button>
+      <div>
+       <h1>
+        My Profile
+       </h1>
+       <p>
+        Campus-wide community
+       </p>
+      </div>
+     </div>
+     <div class="top-actions">
+      <div class="avatar" data-avatar="">
+       ST
+      </div>
+     </div>
+    </header>
+    <div class="container">
+     <div class="grid grid-2">
+      <section class="card">
+       <div class="profile-head">
+        <div class="profile-avatar" data-avatar="">
+         ST
+        </div>
+        <div>
+         <h2 data-user-name="">
+          Student
+         </h2>
+         <p class="muted" data-user-username="">
+          @student
+         </p>
+        </div>
+       </div>
+      </section>
+      <section class="card">
+       <h3>
+        Edit profile
+       </h3>
+       <div class="alert success" hidden="" id="message">
+       </div>
+       <div class="form-grid">
+        <div class="field">
+         <label>
+          Name
+         </label>
+         <input id="name"/>
+        </div>
+        <div class="field">
+         <label>
+          Username
+         </label>
+         <input id="username"/>
+        </div>
+        <div class="field">
+         <label>
+          Course
+         </label>
+         <input id="course" placeholder="B.Tech CSE"/>
+        </div>
+        <div class="field">
+         <label>
+          Year
+         </label>
+         <input id="year" placeholder="1st Year"/>
+        </div>
+        <div class="field">
+         <label>
+          Bio
+         </label>
+         <textarea id="bio" placeholder="Tell your campus community about yourself"></textarea>
+        </div>
+        <button class="btn" id="save">
+         Save profile
+        </button>
+       </div>
+      </section>
+     </div>
+    </div>
+   </main>
+  </div>
+  <script src="js/profile.js" type="module">
+  </script>
+ </body>
+</html>

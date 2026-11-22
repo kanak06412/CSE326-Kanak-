@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Login &middot; Campus Connect
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="auth">
+   <section class="auth-side">
+    <div class="brand">
+     <span class="brand-mark">
+      CC
+     </span>
+     <div>
+      Campus Connect
+      <small>
+       College community platform
+      </small>
+     </div>
+    </div>
+    <h1>
+     Welcome back.
+    </h1>
+    <p>
+     Sign in to join your campus community.
+    </p>
+   </section>
+   <section class="auth-card">
+    <div class="auth-box">
+     <h2>
+      Login
+     </h2>
+     <p>
+      Use your registered email and password.
+     </p>
+     <div class="alert error" hidden="" id="message">
+     </div>
+     <form class="form-grid" id="login-form">
+      <div class="field">
+       <label>
+        Email
+       </label>
+       <input id="email" required="" type="email"/>
+      </div>
+      <div class="field">
+       <label>
+        Password
+       </label>
+       <input id="password" required="" type="password"/>
+      </div>
+      <button class="btn">
+       Login
+      </button>
+     </form>
+     <div class="auth-foot">
+      <a class="auth-link" href="reset.html">
+       Forgot password?
+      </a>
+      <br/>
+      <br/>
+      New here?
+      <a class="auth-link" href="register.html">
+       Create an account
+      </a>
+     </div>
+    </div>
+   </section>
+  </div>
+  <script src="js/auth.js" type="module">
+  </script>
+ </body>
+</html>
